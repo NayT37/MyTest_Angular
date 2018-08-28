@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyTest';
+
+  public canShowActTwo: boolean;
+  public canShowActThree: boolean;
+
+  public GetActOneBool(data) {
+    this.canShowActTwo = data;
+  }
+
+  public GetActTwoBool(data) {
+    this.canShowActThree = data;
+  }
+
 }
